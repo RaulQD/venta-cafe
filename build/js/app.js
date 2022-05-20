@@ -76,20 +76,23 @@ window.addEventListener('scroll', scrollActive);
 
 /*======== SCROLL REVEAL ANIMATION =======*/
 const sr = ScrollReveal({
-    distance: '90px',
     duration: 2500
 })
 
-sr.reveal(`.home_title`, { delay: 400 });
-sr.reveal(`.scrolldown`, { origin: 'bottom', delay: 400 });
 sr.reveal(`.header`, { origin: 'top', delay: 200 });
-sr.reveal(`.section_title`, { origin: 'top', delay: 200 });
-sr.reveal(`.about__info`, { origin: 'right', delay: 200 });
-sr.reveal(`.about__img`, { origin: 'bottom', delay: 400, interval: 200 });
-sr.reveal(`.cafe`, { origin: 'top', delay: 200 });
-sr.reveal(`.comida`, { origin: 'bottom', delay: 200 });
-sr.reveal(`.galeria`, { origin: 'bottom', delay: 200 });
-sr.reveal(`.info`, { origin: 'left', delay: 400 });
-sr.reveal(`.pedidos__img`, { origin: 'right', delay: 400 });
-sr.reveal(`.contact-box`, { origin: 'bottom', delay: 400, interval: 200 });
 
+const srTwo = ScrollReveal({
+    distance: '90px',
+    duration: 2500
+})
+srTwo.reveal(`.home_title`, { delay: 400 });
+srTwo.reveal(`.scrolldown`, { origin: 'bottom', delay: 400 });
+srTwo.reveal(`.section_title`, { origin: 'top', delay: 200 });
+srTwo.reveal(`.about__info`, { origin: 'right', delay: 200 });
+srTwo.reveal(`.about__img`, { origin: 'bottom', delay: 400, interval: 200 });
+srTwo.reveal(`.cafe`, { origin: 'top', delay: 200 });
+srTwo.reveal(`.comida`, { origin: 'bottom', delay: 200 });
+srTwo.reveal(`.galeria`, { origin: 'bottom', delay: 200 });
+srTwo.reveal(`.info`, { origin: 'left', delay: 400 });
+srTwo.reveal(`.pedidos__img`, { origin: 'right', delay: 400 });
+srTwo.reveal(`.contact-box`, { origin: 'bottom', delay: 400, interval: 200 });

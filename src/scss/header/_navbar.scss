@@ -2,39 +2,38 @@
 @use 'base/variables' as * ;
 
 .nav{
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include m.tablet { 
-        height: calc(56px + 24px);
+        height: calc(65px + 10px)
      }
-    .nav__toggle {
-        color: $whiteColour;
-        font-size: 2rem;
-        cursor: pointer;
-        display: inline-flex;
-        @include m.tablet { 
-            display: none;
-         }
-    }
+     .nav__toggle{
+         color:$whiteColour;
+         font-size: 2rem;
+         cursor:pointer;
+         display: inline-flex;
+         @include m.tablet { 
+             display:none;
+          }
+     }
 }
 .nav__logo{
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    color: $whiteColour;
     font-family: $font_third;
     font-weight: 500;
-    color:$whiteColour;
-    font-size:2rem;
+    font-size: 2rem;
     @include m.tablet { 
-        font-size: 2.8rem;
-    }
+        font-size:2.8rem;
+     }
      @include m.desktop { 
          font-size:3.5rem;
-    }
-
+      }
 }
 .scroll-header{
     .nav__toggle{

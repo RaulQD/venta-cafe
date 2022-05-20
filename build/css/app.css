@@ -504,11 +504,11 @@ h3 {
 @media screen and (max-width: 769px) {
   .nav__menu {
     position: fixed;
-    background-color: #eceeef;
     top: 0;
     right: -100%;
     width: 100%;
     height: 100%;
+    background-color: #eceeef;
     transition: 0.5s;
   }
 }
@@ -529,12 +529,12 @@ h3 {
   }
 }
 .nav__menu .nav__links {
+  position: relative;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: medium;
   font-size: 2.2rem;
-  position: relative;
   transition: 0.3s;
 }
 @media screen and (min-width: 769px) {
@@ -604,7 +604,7 @@ h3 {
 }
 @media screen and (min-width: 769px) {
   .nav {
-    height: 80px;
+    height: 75px;
   }
 }
 .nav .nav__toggle {
@@ -625,9 +625,9 @@ h3 {
   -webkit-column-gap: 0.5rem;
      -moz-column-gap: 0.5rem;
           column-gap: 0.5rem;
+  color: #ffffff;
   font-family: "Bona Nova", serif;
   font-weight: 500;
-  color: #ffffff;
   font-size: 2rem;
 }
 @media screen and (min-width: 769px) {
