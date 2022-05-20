@@ -436,7 +436,21 @@
             </p>
           </div>
           <div class="pedidos__img">
-            <img src="build/img/galeria/galeria_03.jpg" alt="galeria_03" />
+            <picture>
+              <source
+                srcset="build/img/galeria/galeria_03.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="build/img/galeria/galeria_03.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="build/img/galeria/galeria_03.jpg"
+                alt="galeria_03"
+              />
+            </picture>
             <div class="button">
               <a href="#" class="button_contact">pidelos ya</a>
             </div>
