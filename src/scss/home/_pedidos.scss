@@ -1,0 +1,83 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as m;
+
+
+.bg-pedidos{
+    background-image: url(../img/menu_arriba.svg),url(../img/menu_abajo.svg), linear-gradient(0deg,$firstColour, $firstColour);
+    background-repeat: no-repeat;
+    background-position: center 5rem, center 92%, 100%;
+    background-size: 200%;
+    padding: 15rem 2rem 30rem 2rem;
+    @include m.tablet { 
+        background-size: 100%;
+        padding:15rem 0 30rem 0;
+     }
+    @include m.desktop { 
+        padding: 15rem 0 20rem 0;
+        background-size:50%,50%,100%;
+     }
+}
+.grid-pedidos{
+    margin-bottom:3rem;
+    @include m.tablet{
+        @include m.grid(2, 2rem);
+    }
+}
+.pedidos{
+    .info__title{
+        color:$secondColour;
+        font-size:1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include m.tablet { 
+            font-size: 2.2rem;
+         }
+    }
+    p{ 
+        color:$whiteColour;
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin: 0 0 2rem 0;
+        &:nth-child(2){
+            margin-bottom:5rem;
+        }
+        @include m.tablet { 
+            font-size: 2.2rem;
+         }
+    }
+}
+.pedidos__img{
+    img{
+        margin: 0 auto;
+        height: 45rem;
+        width: 45rem;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .button{
+        .button_contact{
+            display: block;
+            background: $secondColour;
+            color:$whiteColour;
+            border-radius: 1rem;
+            width: 70%;
+            padding: 1.5rem 1rem;
+            margin: 2rem auto;
+            font-size: 1.8rem;
+            text-align: center;
+            text-transform: 
+            uppercase;
+            font-weight: 600;
+            font-family: $fonts_second;
+            transition-property: background;
+            transition-duration: .3s;
+            &:hover{
+                background:$secondClourAlt;
+            }
+            @include m.tablet { 
+                font-size: 2rem;
+             }
+        }
+    }
+    
+}

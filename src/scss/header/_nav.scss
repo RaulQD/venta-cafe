@@ -1,0 +1,87 @@
+@use 'base/variables' as * ;
+@use 'base/mixins' as m;
+
+.nav__menu{
+    @include m.tabletMax{
+        position: fixed;
+        background-color:$lightGreyColour;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;   
+        transition: .5s;
+    }
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 3rem;
+        padding-top:20rem;
+        @include m.tablet { 
+            padding-top: 0.5rem;
+            flex-direction: row;
+            column-gap: 3rem;
+         }
+    }
+    .nav__links{
+        color:$blackColour;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: medium;
+        font-size: 2.2rem;
+        position: relative;
+        transition: .3s;
+        @include m.tablet { 
+            color:$whiteColour;
+            font-size:1.6rem;
+            &::after{
+                content:'';
+                position: absolute;
+                background-color: $whiteColour;
+                height: 12px;
+                width: 1px;
+                transform: translateX(1.5rem);
+                top:0;
+                bottom:0;
+                margin: auto 0;
+            }
+         }
+        &:hover{
+            position: relative;
+            color: $secondColour;
+        }
+    }
+    .active-link{
+        color:$secondColour;
+    }
+    
+    .nav__close{
+        color:$blackColour;
+        font-size: 2.4rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        @include m.tablet { 
+            display:none;
+         }
+    }
+}
+.show{
+    right:0;
+}
+
+.scroll-header{
+    .nav__links{
+        color:$blackColour;
+        &::after{
+            background-color: $blackColour;
+        }
+        @include m.tablet { 
+            font-size: 1.6rem;
+         }
+    }
+    .active-link{
+        color: $secondColour;
+    }
+}

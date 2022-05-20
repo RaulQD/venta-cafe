@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Lato:wght@400;700&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="bx bx-coffee nav__icon"></i>
+          La Cafeterá
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__links active-link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__links">Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a href="#menu" class="nav__links">Menú</a>
+            </li>
+            <li class="nav__item">
+              <a href="#galery" class="nav__links">Galería</a>
+            </li>
+            <li class="nav__item">
+              <a href="#orders" class="nav__links">Pedidos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__links">Contacto</a>
+            </li>
+            <div class="nav__close" id="nav-close">
+              <i class="bx bx-x"></i>
+            </div>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home home_container" id="home">
+        <div class="home__content">
+          <h1 class="home_title">Disfruta una deliciosa taza de Café</h1>
+          <a href="#about" class="scrolldown home_down" id="scroll-down">
+            <i class="bx bx-chevrons-down"></i>
+          </a>
+        </div>
+      </section>
+      <section
+        class="container container__about section text-center"
+        id="about"
+      >
+        <div class="about">
+          <h2 class="section_title">
+            <span class="section_subtitle">Conoce más</span>
+            Sobre nosotros
+          </h2>
+          <p class="about__info">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            blanditiis eius doloribus laboriosam quo? Quisquam eveniet assumenda
+            ipsa nobis nemo, inventore ipsam rerum animi recusandae repellat
+            nostrum, maxime aspernatur optio! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Excepturi nulla inventore minus nisi
+            nam voluptatum asperiores ipsum beatae ipsam, vel quod assumenda cum
+            quae mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Hic nemo voluptas, alias corrupti unde doloremque dolores
+            sapiente sit, incidunt aut eum ab nesciunt iste aliquid ut repellat
+            ex impedit explicabo.
+          </p>
+        </div>
+        <div class="about__grid">
+          <div class="about__content">
+            <div class="about__img">
+              <img src="build/img/icono_cafe.svg" alt="icono_cafe" />
+              <p>Café</p>
+            </div>
+            <div class="about__img">
+              <img src="build/img/icono_postre.svg" alt="icono_postre" />
+              <p>postres</p>
+            </div>
+            <div class="about__img">
+              <img src="build/img/icono_te.svg" alt="icono_te" />
+              <p>Té</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nuestro_menu" id="menu">
+        <h2 class="heading_blanco section_title">
+          <span class="section_subtitle">Nuestro delicioso</span>
+          menú
+        </h2>
+        <div class="container grid_menu">
+          <div class="menu cafe">
+            <h3>Café</h3>
+            <ul>
+              <li>
+                <p>
+                  Café latte
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.25</p>
+              </li>
+
+              <li>
+                <p>
+                  Café Mocha
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.30</p>
+              </li>
+              <li>
+                <p>
+                  Café Americano
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.30</p>
+              </li>
+              <li>
+                <p>
+                  Capuccino
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.25</p>
+              </li>
+              <li>
+                <p>
+                  Frapuccino
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.29</p>
+              </li>
+              <li>
+                <p>
+                  Café Frio Quemado
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.35</p>
+              </li>
+              <li>
+                <p>
+                  Latte con Caramelo
+                  <span>Café Expresso con leche caliente evaporada</span>
+                </p>
+                <p class="precio">S/.39</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu comida">
+            <h3>Comida</h3>
+            <ul>
+              <li>
+                <p>
+                  Baguette de Pollo
+                  <span>Delicioso Baguette con pollo a la plancha</span>
+                </p>
+                <p class="precio">S/.40</p>
+              </li>
+              <li>
+                <p>
+                  Baguette Pollo y Queso
+                  <span>Baguette combinado con Pollo y Queso Manchego</span>
+                </p>
+                <p class="precio">S/.45</p>
+              </li>
+              <li>
+                <p>
+                  Baguette con Tocino
+                  <span
+                    >Baguette con especias y verduras, además de tocino</span
+                  >
+                </p>
+                <p class="precio">S/.50</p>
+              </li>
+              <li>
+                <p>
+                  Baguette de Jamón
+                  <span>Delicioso Baguette con Jamón y Especias</span>
+                </p>
+                <p class="precio">S/.65</p>
+              </li>
+              <li>
+                <p>
+                  Baguette con Jamón, Queso y Tocino
+                  <span>El especial de la casa</span>
+                </p>
+                <p class="precio">S/. 69</p>
+              </li>
+              <li>
+                <p>
+                  Sandwich de Pollo
+                  <span>Delicioso sandwich con Pollo y especies</span>
+                </p>
+                <p class="precio">S/.12</p>
+              </li>
+              <li>
+                <p>
+                  Sandwich de Jamón y queso
+                  <span>Queso Amarillo con Jamón y Queso</span>
+                </p>
+                <p class="precio">S/.15</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container text-center container__about section"
+        id="galery"
+      >
+        <div class="experience">
+          <h2 class="section_title">
+            <span class="section_subtitle">Vive la</span>
+            experiencia
+          </h2>
+          <div class="galeria">
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_01.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_02.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_03.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_04.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_05.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_06.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_07.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_08.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_09.jpg" alt="galeria_01" />
+            </div>
+            <div class="galeria__imagen">
+              <img src="build/img/galeria/galeria_10.jpg" alt="galeria_01" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-pedidos" id="orders">
+        <h2 class="heading_blanco section_title">
+          <span class="section_subtitle">pide tus</span>
+          productos
+        </h2>
+        <div class="container grid-pedidos">
+          <div class="pedidos info">
+            <p class="info__title">Tenemos los mejores horarios de entrega:</p>
+            <p>
+              Ten en cuenta que la tolerancia de envio es depende de la zona
+              donde te encuentres, un maximo de 90 minutos despues de la hora
+              del pedido realizado.
+            </p>
+            <p class="info__title">
+              Nuestros horarios de atención actuales són:
+            </p>
+            <p>De lunes a sabado de 8:00 A.M. a 5:00 P.M.</p>
+            <p>Domingos de 8:00 A.M. a 12:00 P.M.</p>
+            <p>
+              Horario Reducidos: 24, 25, 31 de Diciembre y 1 de Enero de 8:00
+              A.M. a 1:00 P.M.
+            </p>
+            <p>
+              Solo para consultar la disponibilidad del producto con XX horas de
+              anticipación agradeceremos comunicarte con nosotros al WhatsApp:
+              999-999-999.
+            </p>
+          </div>
+          <div class="pedidos__img">
+            <img src="build/img/galeria/galeria_03.jpg" />
+            <div class="button">
+              <a href="#" class="button_contact">pidelos ya</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container section margin-negative bg-white" id="contact">
+        <h2 class="section_title">
+          <span class="section_subtitle">Enviame un mensaje</span>
+          Contactanos
+        </h2>
+        <div class="contact_container">
+          <div class="contact-grid">
+            <div class="contact-box">
+              <div class="contact-content">
+                <i class="bx bx-mail-send cont_card-icon"></i>
+                <h3 class="cont-title">Email</h3>
+                <span class="cont-data">example@gmail.com</span>
+                <a href="#" class="cont-button button-hover"
+                  >Escribeme
+                  <i class="bx bx-right-arrow-alt cont_button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-content">
+                <i class="bx bxl-whatsapp cont_card-icon"></i>
+                <h3 class="cont-title">WhatsApp</h3>
+                <span class="cont-data">999-999-999</span>
+                <a href="#" class="cont-button button-hover"
+                  >Escribeme
+                  <i class="bx bx-right-arrow-alt cont_button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-content">
+                <i class="bx bxl-messenger cont_card-icon"></i>
+                <h3 class="cont-title">Messenger</h3>
+                <span class="cont-data">xxxxxxxxx</span>
+                <a href="#" class="cont-button button-hover"
+                  >Escribeme
+                  <i class="bx bx-right-arrow-alt cont_button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <a href="#" class="nav__logo">
+            <i class="bx bx-coffee nav__icon"></i>
+            La Cafeterá
+          </a>
+          <ul class="footer_list">
+            <li>
+              <a href="#home" class="footer_link">Menú</a>
+            </li>
+            <li>
+              <a href="#menu" class="footer_link">Nosotros</a>
+            </li>
+            <li>
+              <a href="#about" class="footer_link">Inicio</a>
+            </li>
+          </ul>
+          <ul class="footer-icon">
+            <li>
+              <a href="#" class="footer_social-link">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer_social-link">
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer_social-link">
+                <i class="bx bxl-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_copy">
+          <span> &#169; Todos los derechos son reservados </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+    -->
+    <script src="build/js/scrollreveal.min.js"></script>
+    <script src="build/js/app.js"></script>
+  </body>
+</html>

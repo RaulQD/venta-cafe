@@ -1,0 +1,65 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as m;
+
+
+.home{
+    padding: 5rem 0;
+    position: relative;
+    min-height: 90rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        content:'';
+        background-color: $blackColour;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: .6;
+    }
+    .home__content{
+        position: absolute;
+        text-align: center;
+        h1{
+            margin-top: -10rem;
+            color:$whiteColour;
+        }
+        .scrolldown{
+                color:$whiteColour;
+                font-size: 5rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 15rem auto;
+                transition-property:color;
+                transition-duration: .3s;
+                animation: scroll 3s infinite;
+                &:hover{
+                    color:$secondColour;
+                }
+                @include m.tablet { 
+                    margin: 23rem auto;
+                 }
+            }
+            @keyframes scroll {
+                0%{
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(-.7rem);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+                
+            }
+    }          
+}
+.home_container{
+    background-image: url(../img/header_inicio.jpg);
+    background-position: top center;  
+    background-size: cover;
+    background-repeat: no-repeat;
+}

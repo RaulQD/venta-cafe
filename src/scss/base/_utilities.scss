@@ -1,0 +1,62 @@
+@use 'variables' as *;
+@use 'mixins' as m;
+
+.text-center{
+    text-align: center;
+}
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.section_title{
+    position: relative;
+    color:$firstColour;
+    &::after{
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+        background-image: url(../img/cafe.svg);
+        background-size: 10rem;
+    }
+    .section_subtitle{
+        margin-top: 2rem;
+        color:$secondColour;
+        font-size: 1.5rem;
+        display: block;
+       
+    }
+}
+.margin-negative{
+    margin-top: -10rem ;
+}
+.bg-white{
+    background-color: $whiteColour;
+    box-shadow: 0 0 4px hsl(0deg 0% 4%/30%);
+    border-radius: 10px;
+}
+.main{
+    overflow: hidden;
+}
+.section{
+    padding:7.2rem 2rem 5rem 2rem;
+    @include m.tablet { 
+        padding: 10rem 6.5rem 2rem 6.5rem;
+     }
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    border-radius: .75rem;
+    background-color: $greyColour;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $whiteColour;
+    border-radius: .75rem;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active{
+    background-color: $lightGreyColour;
+}
