@@ -532,16 +532,15 @@ h3 {
   position: relative;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
+  letter-spacing: 2px;
+  font-weight: 600;
   font-size: 2.2rem;
   transition: 0.3s;
-  margin-bottom: 5rem;
 }
 @media screen and (min-width: 769px) {
   .nav__menu .nav__links {
     color: #ffffff;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .nav__menu .nav__links::after {
     content: "";
@@ -629,7 +628,7 @@ h3 {
   color: #ffffff;
   font-family: "Bona Nova", serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 @media screen and (min-width: 769px) {
   .nav__logo {
@@ -1083,10 +1082,17 @@ h3 {
 }
 
 .home_container {
-  background-image: url(../img/header_inicio.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.notwepb .home_container {
+  background-image: url(../img/header_inicio.jpg);
+}
+
+.webp .home_container {
+  background-image: url(../img/header_inicio.webp);
 }
 
 .footer {
