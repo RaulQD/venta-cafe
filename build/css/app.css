@@ -1081,10 +1081,21 @@ h3 {
 }
 
 .home_container {
-  background-image: url(../img/header_inicio.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.notavif.notwepb .home_container {
+  background-image: url(../img/header_inicio.jpg);
+}
+
+.webp .home_container {
+  background-image: url(../img/header_inicio.webp);
+}
+
+.avif .home_container {
+  background-image: url(../img/header_inicio.avif);
 }
 
 .footer {

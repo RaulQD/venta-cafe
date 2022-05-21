@@ -40,6 +40,10 @@ function scrollreveal() {
     return src('src/js/scrollreveal.min.js')
         .pipe(dest('build/js'))
 }
+function imageJs() {
+    return src('src/js/image.js')
+        .pipe(dest('build/js'))
+}
 /**
  * It takes all the images in the src/img folder, converts them to webp format, and saves them in the
  * build/img folder.
@@ -92,8 +96,9 @@ exports.dev = dev;
 exports.img = img;
 exports.js = js;
 exports.scrollreveal = scrollreveal;
+exports.imageJs = imageJs;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.default = series(img, js, scrollreveal, versionWebp, versionAvif, css, dev);
+exports.default = series(img, js, scrollreveal, imageJs, versionWebp, versionAvif, css, dev);
 //series - EJECUTA  LA PRIMERA TAREA Y UNA VEZ QUE LA COMPLETA SE VA A LA SEGUNDA TAREA
 //parallel -  TODOS LAS TAREAS INICIAN AL MISMO TIEMPO
