@@ -533,9 +533,10 @@ h3 {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: medium;
+  font-weight: 500;
   font-size: 2.2rem;
   transition: 0.3s;
+  margin-bottom: 5rem;
 }
 @media screen and (min-width: 769px) {
   .nav__menu .nav__links {
@@ -673,6 +674,7 @@ h3 {
 }
 .about__grid .about__content img {
   width: 12rem;
+  height: 8.5rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 769px) {
@@ -1021,7 +1023,7 @@ h3 {
   right: 0;
   left: 0;
   bottom: 0;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .home .home__content {
   position: absolute;

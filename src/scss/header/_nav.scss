@@ -16,6 +16,7 @@
         flex-direction: column;
         text-align: center;
         row-gap: 3rem;
+        
         padding-top:20rem;
         @include m.tablet { 
             padding-top: 0.5rem;
@@ -28,7 +29,7 @@
         color:$blackColour;
         text-transform: uppercase;
         letter-spacing: 3px;
-        font-weight: medium;
+        font-weight: 500;
         font-size: 2.2rem;
         transition: .3s;
         @include m.tablet { 

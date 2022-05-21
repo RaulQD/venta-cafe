@@ -79,7 +79,7 @@ const sr = ScrollReveal({
     duration: 2500
 })
 
-sr.reveal(`.header`, { origin: 'top', delay: 200 });
+sr.reveal(`.header`, { origin: 'top', delay: 400 });
 
 const srTwo = ScrollReveal({
     distance: '90px',
