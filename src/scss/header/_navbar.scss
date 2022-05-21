@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     @include m.tablet { 
-        height: calc(65px + 10px)
+        height: calc(65px + 20px)
      }
      .nav__toggle{
          color:$whiteColour;
@@ -32,7 +32,7 @@
         font-size:2.8rem;
      }
      @include m.desktop { 
-         font-size:3.5rem;
+         font-size:4.5rem;
       }
 }
 .scroll-header{
@@ -41,7 +41,7 @@
     }
     .nav{
         @include m.tablet { 
-            height:calc(56px + 4px)
+            height:calc(65px + 10px)
          }
     }
 }
