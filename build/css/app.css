@@ -445,6 +445,61 @@ ul, li {
   background-color: #eceeef;
 }
 
+.scrollup {
+  position: fixed;
+  right: 3rem;
+  bottom: -30%;
+  line-height: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  color: #c39c63;
+  padding: 0.8rem;
+  border-radius: 3px;
+  font-size: 2.5rem;
+  display: inline-flex;
+  z-index: 10;
+  opacity: 0.9;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  -webkit-animation: up 2s infinite;
+          animation: up 2s infinite;
+}
+.scrollup:hover {
+  opacity: 1;
+}
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0.45rem);
+            transform: translateY(0.45rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0.45rem);
+            transform: translateY(0.45rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
+
 h1, h2, .heading_blanco, h3 {
   font-family: "Roboto", sans-serif;
   margin: 0 0 5rem 0;
@@ -1022,7 +1077,7 @@ h3 {
   right: 0;
   left: 0;
   bottom: 0;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .home .home__content {
   position: absolute;

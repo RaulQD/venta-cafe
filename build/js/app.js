@@ -2,7 +2,11 @@
 /*============= SCROLL HADER ========*/
 function scrollHeader() {
     const header = document.querySelector('#header');
-    if (this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header');
+    if (this.scrollY >= 200) {
+        header.classList.add('scroll-header');
+    } else {
+        header.classList.remove('scroll-header');
+    }
 }
 window.addEventListener('scroll', scrollHeader);
 
@@ -73,7 +77,23 @@ function scrollActive() {
     });
 }
 window.addEventListener('scroll', scrollActive);
+/*======== SCROLL UP ========*/
+/**
+ * If the user scrolls down 350px, add the class 'show-scroll' to the element with the id 'scroll-up'.
+ * If the user scrolls back up, remove the class 'show-scroll' from the element with the id
+ * 'scroll-up'.
+ */
+function scrollUp() {
+    const scrollUp = document.querySelector('#scroll-up');
 
+    if (this.scrollY >= 350) {
+        scrollUp.classList.add('show-scroll');
+    } else {
+        scrollUp.classList.remove('show-scroll');
+    }
+
+}
+window.addEventListener('scroll', scrollUp);
 /*======== SCROLL REVEAL ANIMATION =======*/
 const sr = ScrollReveal({
     duration: 2500
