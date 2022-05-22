@@ -86,11 +86,11 @@ function img() {
 }
 
 function cache() {
-    return src('./*.html')
+    return src('./*/*.html')
         .pipe(cacheBust({
             type: 'timestamp'
         }))
-        .pipe(dest('./*.html'));
+        .pipe(dest('./*/*.html'));
 }
 /**
  * The dev function watches the scss and img folders for changes, and if there are any, it runs the css
