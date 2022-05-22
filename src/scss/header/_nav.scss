@@ -27,14 +27,13 @@
     .nav__links{
         position: relative;
         color:$blackColour;
-        text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 500;
         font-size: 2.2rem;
         transition: .3s;
         @include m.tablet { 
             color:$whiteColour;
-            font-size:1.7rem;
+            font-size:1.8rem;
             &::after{
                 content:'';
                 position: absolute;
@@ -79,7 +78,7 @@
             background-color: $blackColour;
         }
         @include m.tablet { 
-            font-size: 1.6rem;
+            font-size: 1.8rem;
          }
     }
     .active-link{

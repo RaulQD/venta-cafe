@@ -41,6 +41,10 @@
     .footer_link{
         color:$whiteColour;
         font-size: 1.8rem;
+        transition: .3s;
+        &:hover{
+            color:$secondClourAlt;
+        }
     }
 }
 .footer-icon{

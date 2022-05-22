@@ -75,10 +75,12 @@
     z-index:10;
     opacity: .9;
 
-    transition-duration: .4s;
+    transition-duration: .3s;
     transition-property: opacity;
-    animation: up 2s infinite;
+    animation: up 3s infinite;
     &:hover{
+        background-color:$secondColour;
+        color:$whiteColour;
         opacity: 1;
     }
     @keyframes up {

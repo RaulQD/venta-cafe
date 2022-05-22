@@ -86,7 +86,7 @@ window.addEventListener('scroll', scrollActive);
 function scrollUp() {
     const scrollUp = document.querySelector('#scroll-up');
 
-    if (this.scrollY >= 350) {
+    if (this.scrollY >= 550) {
         scrollUp.classList.add('show-scroll');
     } else {
         scrollUp.classList.remove('show-scroll');
