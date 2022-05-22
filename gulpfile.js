@@ -10,6 +10,9 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+//ELIMINAR CACHE
+const cacheBust = require('gulp-cache-bust');
+
 
 /**
  * The function css() takes the file app.scss, compiles it into CSS, adds vendor prefixes, and saves
@@ -81,6 +84,14 @@ function img() {
         .pipe(imagemin({ optimizationLevel: 3 }))
         .pipe(dest('build/img'));
 }
+
+function cache() {
+    return src('./*.html')
+        .pipe(cacheBust({
+            type: 'timestamp'
+        }))
+        .pipe(dest('./*.html'));
+}
 /**
  * The dev function watches the scss and img folders for changes, and if there are any, it runs the css
  * and img functions.
@@ -89,7 +100,7 @@ function img() {
 function dev() {
     watch('src/scss/**/*.scss', css);
     watch('src/img/**/*', img);
-    watch('src/js/*.js', js)
+    watch('src/js/*.js', js);
 }
 exports.css = css;
 exports.dev = dev;
@@ -99,6 +110,7 @@ exports.scrollreveal = scrollreveal;
 exports.imageJs = imageJs;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.default = series(img, js, scrollreveal, imageJs, versionWebp, versionAvif, css, dev);
+exports.cache = cache;
+exports.default = series(cache, img, js, scrollreveal, imageJs, versionWebp, versionAvif, css, dev);
 //series - EJECUTA  LA PRIMERA TAREA Y UNA VEZ QUE LA COMPLETA SE VA A LA SEGUNDA TAREA
 //parallel -  TODOS LAS TAREAS INICIAN AL MISMO TIEMPO
