@@ -24,7 +24,7 @@ function css(done) {
     // PASOS: 1- IDENTIFICAR EL ARCHIVO, 2- COMPILARLA, 3 -GUARDAR EL .CSS
 
     src('src/scss/app.scss')
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(postcss([autoprefixer()]))
         .pipe(dest('build/css'));
 

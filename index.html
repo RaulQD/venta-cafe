@@ -13,10 +13,10 @@
     <title>Cafeteria</title>
     <link rel="apple-touch-icon" href="build/img/logo.svg" />
     <link rel="shortcut icon" href="build/img/logo.svg" type="image/x-icon" />
-    <link
+    <!-- <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="preload" href="build/css/app.css" as="style" />
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
@@ -24,7 +24,7 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo" aria-label="logo">
-          <i class="bx bx-coffee nav__icon"></i>
+          <i class="fa-solid fa-mug-hot nav__icon"></i>
           La Cafeterá
         </a>
         <div class="nav__menu" id="nav-menu">
@@ -49,11 +49,11 @@
             </li>
           </ul>
           <div class="nav__close" id="nav-close">
-            <i class="bx bx-x"></i>
+            <i class="fa-solid fa-xmark"></i>
           </div>
         </div>
         <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
+          <i class="fa-solid fa-bars-staggered"></i>
         </div>
       </nav>
     </header>
@@ -67,7 +67,7 @@
             id="scroll-down"
             aria-label="arrow"
           >
-            <i class="bx bx-chevrons-down"></i>
+            <i class="fa-solid fa-angles-down"></i>
           </a>
         </div>
       </section>
@@ -471,34 +471,34 @@
           <div class="contact-grid">
             <div class="contact-box">
               <div class="contact-content">
-                <i class="bx bx-mail-send cont_card-icon"></i>
+                <i class="fa-solid fa-paper-plane cont_card-icon"></i>
                 <h3 class="cont-title">Email</h3>
                 <span class="cont-data">example@gmail.com</span>
                 <a href="#" class="cont-button button-hover"
                   >Escribeme
-                  <i class="bx bx-right-arrow-alt cont_button-icon"></i>
+                  <i class="fa-solid fa-arrow-right cont_button-icon"></i>
                 </a>
               </div>
             </div>
             <div class="contact-box">
               <div class="contact-content">
-                <i class="bx bxl-whatsapp cont_card-icon"></i>
+                <i class="fa-brands fa-whatsapp cont_card-icon"></i>
                 <h3 class="cont-title">WhatsApp</h3>
                 <span class="cont-data">999-999-999</span>
                 <a href="#" class="cont-button button-hover"
                   >Escribeme
-                  <i class="bx bx-right-arrow-alt cont_button-icon"></i>
+                  <i class="fa-solid fa-arrow-right cont_button-icon"></i>
                 </a>
               </div>
             </div>
             <div class="contact-box">
               <div class="contact-content">
-                <i class="bx bxl-messenger cont_card-icon"></i>
+                <i class="fa-brands fa-facebook-messenger cont_card-icon"></i>
                 <h3 class="cont-title">Messenger</h3>
                 <span class="cont-data">xxxxxxxxx</span>
                 <a href="#" class="cont-button button-hover"
                   >Escribeme
-                  <i class="bx bx-right-arrow-alt cont_button-icon"></i>
+                  <i class="fa-solid fa-arrow-right cont_button-icon"></i>
                 </a>
               </div>
             </div>
@@ -509,8 +509,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <a href="#" class="nav__logo">
-            <i class="bx bx-coffee nav__icon"></i>
+          <a href="#" class="footer__logo" aria-label="footer-logo">
+            <i class="fa-solid fa-mug-hot footer__icon"></i>
             La Cafeterá
           </a>
           <ul class="footer_list">
@@ -527,17 +527,17 @@
           <ul class="footer-icon">
             <li>
               <a href="#" class="footer_social-link" aria-label="Facebook">
-                <i class="bx bxl-facebook"></i>
+                <i class="fa-brands fa-facebook-f"></i>
               </a>
             </li>
             <li>
               <a href="#" class="footer_social-link" aria-label="Instagram">
-                <i class="bx bxl-instagram"></i>
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li>
               <a href="#" class="footer_social-link" aria-label="WhatsApp">
-                <i class="bx bxl-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp"></i>
               </a>
             </li>
           </ul>
@@ -549,9 +549,12 @@
     </footer>
 
     <a href="#" class="scrollup" id="scroll-up" aria-label="scroll-up">
-      <i class="bx bx-chevrons-up"></i>
+      <i class="fa-solid fa-angles-up"></i>
     </a>
-
+    <script
+      src="https://kit.fontawesome.com/06d585022a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="build/js/image.js"></script>
     <script src="build/js/scrollreveal.min.js"></script>
     <script src="build/js/app.js"></script>

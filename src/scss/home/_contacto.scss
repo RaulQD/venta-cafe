@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    // row-gap: 0.5rem;
     color:$blackColour;
     text-align: center;
     .cont-title{
@@ -38,7 +39,7 @@
          }
     }
     .cont_card-icon{
-        font-size: 5rem;
+        font-size: 4.5rem;
         color: $secondColour;
     }
 }
@@ -56,7 +57,7 @@
     }
     .cont_button-icon{
         margin-top: 0.3rem;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         transition: .4s;
     }
 }

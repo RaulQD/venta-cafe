@@ -16,15 +16,25 @@
            justify-content: space-between;
            align-items: center;
         }
-       .nav__logo{
-           font-size: 3.4rem;
-           margin-bottom: 3rem;
-           @include m.tablet { 
-               margin:0;
-               font-size: 3rem;
-            }
-       }
-       
+    }
+}
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: $font_third;
+    color:$whiteColour;
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+    column-gap: 0.5rem;
+    @include m.tablet { 
+        margin-bottom:0;
+        font-size: 3rem;
+    }
+    .footer__icon{
+        font-size: 3rem;
+        margin-top:-0.9rem;
     }
 }
 .footer_list{
@@ -55,9 +65,9 @@
     .footer_social-link{
         background: $secondClourAlt;
         line-height: 0;
-        padding: 0.6rem;
+        padding: 0.6rem 0.8rem;
         border-radius: 0.4rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         display:inline-block;
         color:$firstColour;
         transition: .3s;
