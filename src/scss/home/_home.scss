@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 
-.home{
+.home_container{
     padding: 5rem 0;
     position: relative;
     min-height: 90rem;
@@ -17,7 +17,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        opacity: .7;
+        opacity: .6;
     }
     .home__content{
         position: absolute;
@@ -57,15 +57,16 @@
             }
     }          
 }
-.home_container{
+.home{
     background-position: top center;  
     background-size: cover;
     background-repeat: no-repeat;
+    // opacity: .8;
 }
-.notwepb .home_container{
+.notwepb .home{
     background-image: url(../img/header_inicio.jpg);
 }
-.webp .home_container{
+.webp .home{
     background-image: url(../img/header_inicio.webp);
 }
 // .avif .home_container{
