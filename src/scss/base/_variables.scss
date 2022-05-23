@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Lato:wght@400;700&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 // variables fonts
 $fonts_main: 'Roboto', sans-serif;
 $fonts_second: 'Raleway', sans-serif;
 $font_third: 'Bona Nova', serif;
 $font_fourth: 'Lato', sans-serif;
-
+// @font-face {
+//     font-family: 'Roboto', sans-serif;
+//     font-display: swap;
+//     src:url();
+// }
 //Media Queries
 $telefono:480px;
 $tablet:769px;
