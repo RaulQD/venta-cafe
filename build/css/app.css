@@ -591,13 +591,15 @@ h3 {
   position: relative;
   color: #000000;
   letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: 2.2rem;
   transition: 0.3s;
 }
 @media screen and (min-width: 769px) {
   .nav__menu .nav__links {
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .nav__menu .nav__links::after {
     content: "";
@@ -645,7 +647,7 @@ h3 {
 }
 @media screen and (min-width: 769px) {
   .scroll-header .nav__links {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 .scroll-header .active-link {
