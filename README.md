@@ -4,3 +4,7 @@
 
 ##Información
 
+* Galeria
+* Menú
+
+
